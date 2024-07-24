@@ -485,3 +485,53 @@ header {
   font-weight: 800;
   color: #ec544e;
 }
+
+#Newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: url("img/banner/g2.jpg") no-repeat 20% 30% #041e42;
+}
+
+.newsletter-text h4 {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+}
+
+.newsletter-text p {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #81a08f;
+}
+
+.newsletter-text p:last-child {
+  margin-bottom: 0;
+}
+
+.newsletter-text p span {
+  color: #FFD700;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-form input {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.newsletter-form button {
+  background-color: green;
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.newsletter-form button:hover {
+  background-color: #FFD700;
+  color: #000;
+}
