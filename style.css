@@ -109,7 +109,7 @@ button:hover {
 }
 
 .section-p1--top0 {
-  padding: 0px 60px 30px 60px;
+  padding: 0px 60px 30px;
 }
 
 .section-m1 {
@@ -197,7 +197,7 @@ header {
   min-height: 300px;
   height: calc(100vh - 120px);
   width: 100%;
-  padding: 0 80px;
+  padding: 0 60px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -230,34 +230,36 @@ header {
   color:#FFA500;
 }
 
-#features {
+.features {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 30px;
 }
 
-#features .feature__item {
-  width: 180px;
+.features .feature__item {
+  /* width: 180px; */
+  max-width: 180px;
   text-align: center;
-  padding: 25px 15px;
+  padding: 25px 5px;
   box-shadow: 20px 20px 34px rgba(0,0,0,0.1);
   border: 1px solid #cce7d0;
   border-radius: 4px;
-  margin: 15px 0;
+  /* margin: 15px 0; */
 }
 
-#features .feature__item:hover {
+.features .feature__item:hover {
   box-shadow: 20px 20px 34px rgba(6,59,0,0.1);
 }
 
-#features .feature__item img {
+.features .feature__item img {
   width: 100%;
   margin-bottom: 10px;
 }
 
-#features .feature__item h6,
-#features .feature__item:nth-child(n + 1) h6 {
+.features .feature__item h6,
+.features .feature__item:nth-child(n + 1) h6 {
   display: inline-block;
   padding: 0;
   padding: 10px 8px 8px;
@@ -267,27 +269,35 @@ header {
   background-color: #fddde4;
 }
 
-#features .feature__item:nth-child(n + 2) h6 {
+.features .feature__item:nth-child(n + 2) h6 {
   background-color: #cdebbc;
 }
 
-#features .feature__item:nth-child(n + 3) h6 {
+.features .feature__item:nth-child(n + 3) h6 {
   background-color: #d1e8f2;
 }
 
-#features .feature__item:nth-child(n + 4) h6 {
+.features .feature__item:nth-child(n + 4) h6 {
   background-color: #cdd4f8;
 }
 
-#features .feature__item:nth-child(n + 5) h6 {
+.features .feature__item:nth-child(n + 5) h6 {
   background-color: #f6dbf6;
 }
 
-#features .feature__item:nth-child(n + 6) h6 {
+.features .feature__item:nth-child(n + 6) h6 {
   background-color: #fff2e5;
 }
 
 @media only screen and (max-width: 1024px) {
+  .section-p1 {
+    padding: 20px 40px;
+  }
+
+  .section-p1--top0 {
+    padding: 0px 40px 20px;
+  }
+
   header {
     padding: 20px 40px;
   }
@@ -299,6 +309,19 @@ header {
   .hero {
     padding: 0 40px;
     background-position: top 20% right -150px;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px; */
+  }
+  
+  .features .feature__item {
+    /* max-width: 150px; */
   }
 }
 
@@ -316,6 +339,14 @@ header {
   h4 {
     font-size: 16px;
     line-height: 1.2;
+  }
+
+  .section-p1 {
+    padding: 20px;
+  }
+
+  .section-p1--top0 {
+    padding: 0px 20px 20px;
   }
 
   .hide-in-mobile {
