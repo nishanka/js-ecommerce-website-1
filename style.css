@@ -124,13 +124,16 @@ button:hover {
   display: none;
 }
 
+.box-shadow {
+  box-shadow: 0 25px 15px rgba(6,59,0,0.1);
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 60px;
   background: rgb(6, 59, 0);
-  box-shadow: 0 25px 15px rgba(6,59,0,0.1);
   position: sticky;
   top: 0;
   left: 0;
