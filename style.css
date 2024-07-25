@@ -475,14 +475,64 @@ header {
   color: #ec544e;
 }
 
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: url("img/banner/g2.jpg") no-repeat 20% 30% #041e42;
+  gap: 30px;
+}
+
+.newsletter-text h4 {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+}
+
+.newsletter-text p {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #81a08f;
+}
+
+.newsletter-text p:last-child {
+  margin-bottom: 0;
+}
+
+.newsletter-text p span {
+  color: #FFD700;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-form input {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.newsletter-form button {
+  background-color: green;
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.newsletter-form button:hover {
+  background-color: #FFD700;
+  color: #000;
+}
 
 @media only screen and (max-width: 1024px) {
   .section-p1 {
-    padding: 20px 40px;
+    padding: 30px 40px;
   }
 
   .section-p1--top0 {
-    padding: 0px 40px 20px;
+    padding: 0px 40px 30px;
   }
 
   header {
@@ -501,6 +551,10 @@ header {
   .features {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .newsletter {
+    gap: 15px;
   }
 }
 
@@ -662,9 +716,11 @@ header {
     width: 33.33%;
     background-position: center center;
   }
+  
   .cta--sm .cta__title {
     font-size: 18px;
   }
+
   .cta--sm .cta__subtitle {
     font-size: 12px;
     line-height: 1.5;
@@ -735,4 +791,23 @@ header {
   .cta--sm {
     background-position: center top;
   }
+
+  .newsletter {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .newsletter-form  {
+    min-width: 70%;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    border-radius: 4px;
+  }
+
 }
