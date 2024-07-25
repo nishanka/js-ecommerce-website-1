@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS eCommerce Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/pg-home.css">
+    <link rel="stylesheet" href="css/pg-shop.css">
+    <link rel="stylesheet" href="css/pagination.css">
 </head>
-<body>
+
+<body class="pg-shop">
     <header class="box-shadow">
         <a class="header__logo" href="#"><img src="img/logo.svg" alt="Logo" /></a>
         <nav id="Nav" class="header__nav">
             <span id="NavClose" class="header__nav-close show-in-mobile"><i class=" fa fa-times"></i></span>
             <ul class="header__nav-list">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="hide-in-mobile"><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li class="hide-in-mobile"><a href="cart.html"><i class="fa fa-shopping-cart"
+                            aria-hidden="true"></i></a></li>
             </ul>
         </nav>
         <div class="header__mobile-links show-in-mobile">
@@ -28,41 +32,10 @@
         </div>
     </header>
     <section class="hero section-p1">
-        <h4>Trade-in-offer</h4>
-        <h2>Super Deals</h2>
-        <h3>On All Products</h3>
+        <h2>#stayhome</h2>
         <p>Save more with coupons & up to 70% off!</p>
-        <button>Shop Now</button>
-    </section>
-    <section class="features section-p1">
-        <div class="feature__item">
-            <img src="img/features/f1.png" alt="feature 1" />
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="feature__item">
-            <img src="img/features/f2.png" alt="feature 1" />
-            <h6>Online Order</h6>
-        </div>
-        <div class="feature__item">
-            <img src="img/features/f3.png" alt="feature 1" />
-            <h6>Save Money</h6>
-        </div>
-        <div class="feature__item">
-            <img src="img/features/f4.png" alt="feature 1" />
-            <h6>Promotions</h6>
-        </div>
-        <div class="feature__item">
-            <img src="img/features/f5.png" alt="feature 1" />
-            <h6>Happy Sell</h6>
-        </div>
-        <div class="feature__item">
-            <img src="img/features/f6.png" alt="feature 1" />
-            <h6>F24/7 Support</h6>
-        </div>
     </section>
     <section class="products section-p1">
-        <h2>Featured Products</h2>
-        <p>Summer Collection Modern Design</p>
         <div class="product__collection">
             <div class="product__item">
                 <img src="img/products/f1.jpg" class="product__img" alt="Product Image" />
@@ -192,17 +165,6 @@
                 </div>
                 <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
             </div>
-        </div>
-    </section>
-    <section class="cta section-p1 box-shadow">
-        <h4 class="cta__title">Repair Services</h4>
-        <h2 class="cta__subtitle">Up to <span>70% Off</span> - All T-Shirts & Accessories</h2>
-        <button class="cta__button btn--normal">Explore More</button>
-    </section>
-    <section class="products section-p1">
-        <h2>New Arrivals</h2>
-        <p>Summer Collection New Modern Design</p>
-        <div class="product__collection">
             <div class="product__item">
                 <img src="img/products/n1.jpg" class="product__img" alt="Product Image" />
                 <div class="product__desc">
@@ -333,33 +295,10 @@
             </div>
         </div>
     </section>
-    <section class="cta-md section-p1">
-        <div class="cta cta--md cta--md-left">
-            <h4 class="cta__title">Crazy Deals</h4>
-            <h2 class="cta__subtitle">buy 1 get 1 free</h2>
-            <span>The best classic dress is on sale</span>
-            <button class="cta__button btn--transparent">Learn More</button>
-        </div>
-        <div class="cta cta--md cta--md-right">
-            <h4 class="cta__title">Spring/Summer</h4>
-            <h2 class="cta__subtitle">upcoming season</h2>
-            <span>The best classic dress is on sale</span>
-            <button class="cta__button btn--transparent">Learn More</button>
-        </div>
-    </section>
-    <section class="cta-sm section-p1--top0">
-        <div class="cta cta--sm cta--sm-left">
-            <h2 class="cta__title">Seasonal Sale</h2>
-            <h3 class="cta__subtitle">Winter Collection - 50% Off</h3>
-        </div>
-        <div class="cta cta--sm cta--sm-middle">
-            <h4 class="cta__title">New Footware Collection</h4>
-            <h2 class="cta__subtitle">Spring/Summer 2024</h2>
-        </div>
-        <div class="cta cta--sm cta--sm-right">
-            <h4 class="cta__title">T-Shirts</h4>
-            <h2 class="cta__subtitle">buy 1 get 1 free</h2>
-        </div>
+    <section class="pagination section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
     </section>
     <section class="newsletter section-p1 box-shadow">
         <div class="newsletter-text">
@@ -421,4 +360,5 @@
     </footer>
     <script src='script.js'></script>
 </body>
+
 </html>

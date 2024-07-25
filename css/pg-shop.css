@@ -1,0 +1,15 @@
+.pg-shop .hero {
+    background-image: url("../img/banner/b1.jpg");
+    height: 40vh;
+    align-items: center;
+    text-align: center;
+}
+
+.pg-shop .hero > * {
+    color: #fff;
+    background: none;
+}
+
+.pg-shop .hero p {
+    margin-top: 0;
+}

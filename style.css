@@ -204,26 +204,11 @@ header {
   box-shadow: 0 25px 15px rgba(6,59,0,0.05);
 }
 
-.hero h2 {
-  margin-bottom: 5px;
-  color: #008000;
-}
-
-.hero h4 {
-  margin-bottom: 15px;
-}
-
 .hero button {
   background: url("img/button.png") no-repeat center center transparent;
   width: 187px;
   height: 42px;
   color: green;
-  /* padding: 14px 20px; */
-  /* border: none; */
-  /* cursor: pointer;
-  font-size: 15px;
-  font-weight: 700;
-  transition: all 0.3s ease-in-out; */
 }
 
 .hero button:hover {
