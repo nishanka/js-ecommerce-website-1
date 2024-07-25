@@ -540,10 +540,6 @@ header {
     margin-bottom: 5px;
   }
 
-  .product__item {
-    max-width: 200px;
-  }
-
   .cta__subtitle,
   .cta__subtitle span {
     font-size: 20px;
@@ -596,5 +592,6 @@ header {
   .product__item {
     min-width: auto;
     width: 100%;
+    max-width: 200px;
   }
 }
