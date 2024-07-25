@@ -1,6 +1,7 @@
 .product {
     display: flex;
     gap: 30px;
+    box-shadow: 0 25px 15px rgba(6,59,0,0.03);
 }
 
 .product-images {
@@ -61,7 +62,6 @@
     .product {
         display: flex;
         flex-direction: column;
-        /* box-shadow: 0 25px 15px rgba(6,59,0,0.1); */
     }
     .product-images,
     .product-details {
