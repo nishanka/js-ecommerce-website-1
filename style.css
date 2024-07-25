@@ -213,13 +213,14 @@ header {
 .hero button {
   background: url("img/button.png") no-repeat center center transparent;
   width: 187px;
-  padding: 14px 20px;
-  border: none;
+  height: 42px;
   color: green;
-  cursor: pointer;
+  /* padding: 14px 20px; */
+  /* border: none; */
+  /* cursor: pointer;
   font-size: 15px;
   font-weight: 700;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; */
 }
 
 .hero button:hover {
@@ -368,6 +369,7 @@ header {
 }
 
 .cta__title {
+  text-shadow: 1px 1px black;
   color: #fff;
 }
 
@@ -380,13 +382,15 @@ header {
 
 .cta__subtitle {
   color: #fff;
+  text-shadow: 1px 1px black;
 }
 
 .cta__subtitle span {
   color: #ef3636;
 }
 
-.cta-md {
+.cta-md,
+.cta-sm {
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -426,6 +430,51 @@ header {
   background-color: #fff;
   color: #000;
 }
+
+.cta--sm {
+  width: 30%;
+  height: 30vh;
+  padding: 30px;
+  background: #cdcdcd;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  background-position: right top;
+}
+
+.cta--sm:nth-child(2) {
+  width: auto;
+  flex-grow: 1;
+}
+
+.cta--sm-left {
+  background-image: url("img/banner/b7.jpg");
+}
+
+.cta--sm-middle {
+  background-image: url("img/banner/b4.jpg");
+}
+
+.cta--sm-right {
+  background-image: url("img/banner/b18.jpg");
+}
+
+.cta--sm .cta__title {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #fff;
+}
+
+.cta--sm .cta__subtitle {
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #ec544e;
+}
+
 
 @media only screen and (max-width: 1024px) {
   .section-p1 {
@@ -477,11 +526,11 @@ header {
   }
 
   .section-p1 {
-    padding: 20px;
+    padding: 30px 20px;
   }
 
   .section-p1--top0 {
-    padding: 0px 20px 20px;
+    padding: 0px 20px 30px;
   }
 
   .hide-in-mobile {
@@ -607,6 +656,19 @@ header {
   .cta--md .cta__subtitle {
     margin: 5px 0;
   }
+
+  .cta--sm,
+  .cta--sm:nth-child(2) {
+    width: 33.33%;
+    background-position: center center;
+  }
+  .cta--sm .cta__title {
+    font-size: 18px;
+  }
+  .cta--sm .cta__subtitle {
+    font-size: 12px;
+    line-height: 1.5;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -656,5 +718,21 @@ header {
     min-width: auto;
     width: 100%;
     max-width: 200px;
+  }
+
+  .cta-md {
+    flex-direction: column;
+  }
+
+  .cta-sm {
+    flex-direction: column;
+  }
+  
+  .cta--sm, .cta--sm:nth-child(2) {
+    width: auto;
+  }
+
+  .cta--sm {
+    background-position: center top;
   }
 }
