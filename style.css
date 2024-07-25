@@ -28,14 +28,26 @@ h2 {
   color: #222;
 }
 
+h3 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
 h4 {
   font-size: 20px;
+  line-height: 1.2;
   color: #222;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 h6 {
   font-weight: 700;
   font-size: 12px;
+  line-height: 1.2;
 }
 
 p {
@@ -181,7 +193,7 @@ header {
 }
 
 .hero {
-  background: url("img/hero3.jpg") no-repeat right top;
+  background: url("img/hero3.jpg") no-repeat right top 20%;
   min-height: 300px;
   height: calc(100vh - 120px);
   width: 100%;
@@ -226,9 +238,29 @@ header {
   .header__nav-list li {
     margin: 0 12px;
   }
+
+  .hero {
+    padding: 0 40px;
+    background-position: top 20% right -150px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  
+  h4 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
   .hide-in-mobile {
     display: none;
   }
@@ -314,5 +346,59 @@ header {
 
   .header__cart-link {
     cursor: pointer;
+  }
+
+  .hero {
+    height: 70vh;
+    padding: 0 20px;
+    background-position: top 20% right -260px;
+  }
+
+  .hero h4 {
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #222;
+  }
+
+  h5 {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  h6 {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  .hero {
+    position: relative;
+    background-position: top 20% left 5%;
+  }
+
+  .hero > * {
+    background: rgba(255,255,255,0.6);
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .hero h4 {
+    margin-bottom: 0;
   }
 }
