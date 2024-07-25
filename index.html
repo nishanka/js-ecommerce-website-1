@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="header">
-        <a id="logo" href="#"><img src="img/logo.svg" alt="Logo" /></a>
-        <div>
-            <ul id="navbar">
+    <header>
+        <a class="header__logo" href="#"><img src="img/logo.svg" alt="Logo" /></a>
+        <nav id="Nav" class="header__nav">
+            <span id="NavClose" class="header__nav-close show-in-mobile"><i class=" fa fa-times"></i></span>
+            <ul class="header__nav-list">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li class="hide-in-mobile"><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
             </ul>
+        </nav>
+        <div class="header__mobile-links show-in-mobile">
+            <a class="header__cart-link" href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <i id="Hamburger" class="fa fa-outdent header__hamburger"></i>
         </div>
-    </section>
+        </header>
     <script src='script.js'></script>
 </body>
 </html>
