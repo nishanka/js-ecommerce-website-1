@@ -104,6 +104,16 @@ button:hover {
   color: #000;
 }
 
+.btn--green {
+  background-color: #008000;
+  color: #fff;
+}
+
+.btn--green:hover {
+  background-color: #FFA500;
+  color: #000;
+}
+
 .section-p1 {
   padding: 30px 60px;
 }
@@ -618,6 +628,10 @@ footer a:hover {
 
   .newsletter {
     gap: 15px;
+  }
+
+  .footer-copyright {
+    text-align: left;
   }
 }
 

@@ -13,3 +13,13 @@ if (navClose) {
     nav.classList.remove('active');
   });
 }
+
+var productItem = document.getElementsByClassName('product__item');
+
+if (productItem) {
+  for (let i = 0; i < productItem.length; i++) {
+    productItem[i].onclick = function () {
+      window.location.href = 'product.html';
+    };
+  }
+}

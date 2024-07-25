@@ -3,6 +3,7 @@
     height: 40vh;
     align-items: center;
     text-align: center;
+    background-size: cover;
 }
 
 .pg-shop .hero > * {
