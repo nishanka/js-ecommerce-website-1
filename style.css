@@ -214,6 +214,23 @@ header {
   box-shadow: 0 25px 15px rgba(6,59,0,0.05);
 }
 
+.hero.hero-small {
+  height: 40vh;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero.hero-small > * {
+  color: #fff;
+  background: none;
+}
+
+.hero.hero-small p {
+  margin-top: 0;
+}
+
 .hero button {
   background: url("img/button.png") no-repeat center center transparent;
   width: 187px;
