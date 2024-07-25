@@ -526,6 +526,81 @@ header {
   color: #000;
 }
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+.footer-logo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  line-height: 1.2;
+  color: #008000;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #FFA500;
+}
+
+.footer-follow {
+  margin-top: 30px;
+}
+
+.footer-follow a {
+  transition: all 0.3s ease-in-out;
+  margin-right: 4px;
+}
+
+.footer-follow a:hover {
+  color: #FFA500;
+}
+
+.footer-install__row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer-install__row img {
+  border: 1px solid #008000;
+  border-radius: 4px;
+  margin: 0 10px 10px 0;
+}
+
+.footer-copyright {
+  flex-basis: 100%;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1024px) {
   .section-p1 {
     padding: 30px 40px;
@@ -725,6 +800,39 @@ header {
     font-size: 12px;
     line-height: 1.5;
   }
+
+  footer .col {
+    padding-top: 0;
+  }
+
+  footer .col:nth-child(1) {
+    width: 100%
+  }
+  
+  footer .col:nth-child(2),
+  footer .col:nth-child(3) {
+    width: 45%
+  }
+
+  footer h4 {
+    margin-bottom: 15px;
+  }
+
+  .footer-follow {
+    margin-top: 20px;
+  }
+  
+  .footer-follow h4 {
+    margin-bottom: 5px;
+  }
+  
+  .footer-install {
+    width: 100%;
+  }
+
+  .footer-copyright {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -809,5 +917,15 @@ header {
   .newsletter-form button {
     border-radius: 4px;
   }
+}
 
+@media only screen and (max-width: 480px) {
+  footer .col:nth-child(2),
+  footer .col:nth-child(3) {
+    width: 100%
+  }
+
+  .footer-install__row {
+    flex-direction: column;
+  }
 }
