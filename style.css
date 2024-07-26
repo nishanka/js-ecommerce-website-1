@@ -214,7 +214,7 @@ header {
   box-shadow: 0 25px 15px rgba(6,59,0,0.05);
 }
 
-.hero.hero-small {
+.hero.hero--small {
   height: 40vh;
   align-items: center;
   text-align: center;
@@ -222,15 +222,22 @@ header {
   background-position: center;
 }
 
-.hero.hero-small > * {
+.hero.hero--small > * {
   color: #fff;
   background: none;
 }
 
-.hero.hero-small p {
+.hero.hero--small p {
   margin-top: 0;
 }
 
+.hero h2 {
+  margin-bottom: 5px;
+}
+
+.hero p:last-child {
+  margin-bottom: 0;
+}
 .hero button {
   background: url("img/button.png") no-repeat center center transparent;
   width: 187px;
@@ -240,6 +247,20 @@ header {
 
 .hero button:hover {
   color:#FFA500;
+}
+
+.main-content-cols {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.main-content__col {
+  width: 50%;
+}
+
+.main-content__col img {
+  max-width: 100%;
 }
 
 .features {
@@ -617,6 +638,11 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
+  h2 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  
   .section-p1 {
     padding: 30px 40px;
   }
@@ -636,6 +662,10 @@ footer a:hover {
   .hero {
     padding: 0 40px;
     background-position: top 20% right -150px;
+  }
+
+  .main-content-cols {
+    align-items: flex-start;
   }
 
   .features {
@@ -778,6 +808,19 @@ footer a:hover {
     margin-bottom: 5px;
   }
 
+  .main-content-cols {
+    flex-direction: column;
+  }
+
+  .main-content__col {
+    width: 100%;
+  }
+
+  .main-content__col--left img {
+    width: 100%;
+    max-width: 300px;
+  }
+
   .cta {
     height: 30vh;
   }
@@ -887,7 +930,7 @@ footer a:hover {
     background-position: top 20% left 5%;
   }
 
-  .hero > * {
+  .pg-home .hero > * {
     background: rgba(255,255,255,0.6);
     padding: 5px;
     border-radius: 4px;
