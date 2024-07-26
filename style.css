@@ -60,14 +60,20 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-input {
-  height: 3.125rem;
+input,
+textarea {
+  height: auto;
   padding: 0 1.25em;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.2;
   width: 100%;
-  border: 1px solid transparent;
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
   outline: none;
+}
+
+input {
+  height: 40px;
 }
 
 button {
@@ -292,7 +298,6 @@ header {
 .main-video h2 a:hover {
   color: #FFA500;
 }
-
 
 .main-video .video {
   width: 70%;
@@ -709,6 +714,14 @@ footer a:hover {
 
   .main-content-cols {
     align-items: flex-start;
+  }
+
+  .sub-content__col--left {
+    width: 55%;
+  }
+  
+  .sub-content__col--right {
+    width: 45%;
   }
 
   .features {
