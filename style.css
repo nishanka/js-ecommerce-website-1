@@ -56,6 +56,10 @@ p {
   margin: 15px 0 20px 0;
 }
 
+a {
+  transition: all 0.3s ease-in-out;
+}
+
 input {
   height: 3.125rem;
   padding: 0 1.25em;
@@ -261,6 +265,31 @@ header {
 
 .main-content__col img {
   max-width: 100%;
+}
+
+.main-video {
+  text-align: center;
+}
+
+.main-video h2 a {
+  color: #008000;
+}
+
+.main-video h2 a:hover {
+  color: #FFA500;
+}
+
+
+.main-video .video {
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+
+.main-video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .features {
@@ -819,6 +848,12 @@ footer a:hover {
   .main-content__col--left img {
     width: 100%;
     max-width: 300px;
+  }
+
+  .main-video .video {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto 0;
   }
 
   .cta {
