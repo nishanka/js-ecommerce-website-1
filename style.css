@@ -267,6 +267,20 @@ header {
   max-width: 100%;
 }
 
+.sub-content-cols {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.sub-content__col--left {
+  width: 65%;
+}
+
+.sub-content__col--right {
+  width: 35%;
+}
+
 .main-video {
   text-align: center;
 }
@@ -837,11 +851,14 @@ footer a:hover {
     margin-bottom: 5px;
   }
 
-  .main-content-cols {
+  .main-content-cols,
+  .sub-content-cols {
     flex-direction: column;
   }
 
-  .main-content__col {
+  .main-content__col,
+  .sub-content__col--left,
+  .sub-content__col--right {
     width: 100%;
   }
 
